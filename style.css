@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.s1{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    width: 100%;
+}
+.top-nav {
+    width: 100%; /* Adjust width as needed */
+    height: 70px; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(5px); /* Applies a blur effect */
+    border-radius: 10px; /* Adds a rounded border */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding-right: 20px; /* Optional padding for the right side */
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.transparent-btn:hover {
+    background-color: #77b9e0;
+}
+.main-content {
+    position: absolute;
+    top: 700px;
+    left: 850px;
+    text-align: center;
+    color: white; 
+}
+
+.explore-btn {
+    background-color: #153c60;
+    color: white;
+    border: none;
+    font-size: 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #549ec5;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.main img{
+    position: absolute;
+    top: 300px;
+    left: 660px;
+    height: 300px;
+    width: 700px;
+}
+
+.logo {
+    position: fixed;
+    height: 50px;
+    width: 100px;
+    top: 10px;
+    left: 50px;
+}
+.logo:hover {
+    background-color: #77b9e0;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.countdown div {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.countdown div span {
+    display: block;
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.treadmill{
+    position: absolute;
+    top: 650px;
+    left: 220px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.treadmill:hover{
+    transform: scale(1.1); /* Increase size on hover */
+    filter: drop-shadow(0 0 5px Turquoise) drop-shadow(0 0 20px Turquoise) drop-shadow(0 0 40px Turquoise); /* Neon glow effect */
+}
+.treadmill img{
+    width: 150px;
+    height: 150px;
+}
+.treadmill h1{
+    color: #08273d;
+}
+
+.fitness{
+    position: absolute;
+    top: 650px;
+    left: 550px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitness:hover{
+    transform: scale(1.1); /* Increase size on hover */
+    filter: drop-shadow(0 0 5px Turquoise) drop-shadow(0 0 20px Turquoise) drop-shadow(0 0 40px Turquoise); /* Neon glow effect */
+}
+.fitness img{
+    width: 140px;
+    height: 150px;
+}
+.fitness h1{
+    color: #08273d;
+}
+
+.gym{
+    position: absolute;
+    top: 650px;
+    left: 1300px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gym:hover{
+    transform: scale(1.1); /* Increase size on hover */
+    filter: drop-shadow(0 0 5px Turquoise) drop-shadow(0 0 20px Turquoise) drop-shadow(0 0 40px Turquoise); /* Neon glow effect */
+}
+.gym img{
+    width: 140px;
+    height: 150px;
+}
+.gym h1{
+    color: #08273d;
+}
+
+.play{
+    position: absolute;
+    top: 650px;
+    left: 1630px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play:hover{
+    transform: scale(1.1); /* Increase size on hover */
+    filter: drop-shadow(0 0 5px Turquoise) drop-shadow(0 0 20px Turquoise) drop-shadow(0 0 40px Turquoise); /* Neon glow effect */
+}
+.play img{
+    width: 140px;
+    height: 150px;
+}
+.play h1{
+    color: #08273d;
+}
+
+
+#s2{
+    background-image: url(img/bg1.jpg);
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fa-snowflake {
+    position: absolute;
+    color: #fff; /* Change the color as needed */
+    pointer-events: none;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .body{
+        margin: 0;
+        padding: 0;
+        width: 425px;
+    }
+    .main{
+        margin: 0;
+        padding: 0;
+      }
+      .main img{
+        width: 250px;
+        height: 120px;
+        position: absolute;
+        top: 200px;
+        left: 98px;
+        background-color: white;
+      }
+      .main-content{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 25px;
+        top: 330px;
+      }
+      .category{
+        margin: 0;
+        padding: 0;
+      }
+    .treadmill{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 550px;
+        left: 60px;
+    }
+    .treadmill img{
+        width: 60px;
+        height: 60px;
+    }
+    .treadmill h1{
+        font-size: 15px;
+    }
+    .fitness{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 550px;
+        left: 250px;
+    }
+    .fitness img{
+        width: 60px;
+        height: 60px;
+    }
+    .fitness h1{
+        font-size: 15px;
+    }
+    .gym{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 700px;
+        left: 60px;
+    }
+    .gym img{
+        width: 60px;
+        height: 60px;
+    }
+    .gym h1{
+        font-size: 15px;
+    }
+    .play{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 700px;
+        left: 250px;
+    }
+    .play img{
+        width: 60px;
+        height: 60px;
+    }
+    .play h1{
+        font-size: 15px;
+    }
+    
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .main{
+    margin: 0;
+    padding: 0;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .main img{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    background-color: white;
+  }
+  .main-content{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10px;
+    top: 330px;
+  }
+  .category{
+    margin: 0;
+    padding: 0;
+  }
+.treadmill{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 40px;
+}
+.treadmill img{
+    width: 60px;
+    height: 60px;
+}
+.treadmill h1{
+    font-size: 15px;
+}
+.fitness{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+    left: 250px;
+}
+.fitness img{
+    width: 60px;
+    height: 60px;
+}
+.fitness h1{
+    font-size: 15px;
+}
+.gym{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 700px;
+    left: 40px;
+}
+.gym img{
+    width: 60px;
+    height: 60px;
+}
+.gym h1{
+    font-size: 15px;
+}
+.play{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 700px;
+    left: 250px;
+}
+.play img{
+    width: 60px;
+    height: 60px;
+}
+.play h1{
+    font-size: 15px;
+}
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .main{
+      margin: 0;
+      padding: 0;
+    }
+    .main img{
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+      background-color: white;
+    }
+    .main-content{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 230px;
+      top: 380px;
+    }
+    .category{
+      margin: 0;
+      padding: 0;
+    }
+  .treadmill{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 580px;
+      left: 20px;
+  }
+  .treadmill img{
+      width: 100px;
+      height: 100px;
+  }
+  .treadmill h1{
+      font-size: 15px;
+  }
+  .fitness{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 580px;
+      left: 200px;
+  }
+  .fitness img{
+      width: 100px;
+      height: 100px;
+  }
+  .fitness h1{
+      font-size: 15px;
+  }
+  .gym{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 580px;
+      left: 400px;
+  }
+  .gym img{
+      width: 100px;
+      height: 100px;
+  }
+  .gym h1{
+      font-size: 15px;
+  }
+  .play{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 580px;
+      left: 600px;
+  }
+  .play img{
+      width: 100px;
+      height: 100px;
+  }
+  .play h1{
+      font-size: 15px;
+  }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main{
+      margin: 0;
+      padding: 0;
+    }
+    .main img{
+      width: 350px;
+      height: 200px;
+      position: absolute;
+      top: 250px;
+      left: 350px;
+    }
+    .main-content{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 320px;
+      top: 450px;
+    }
+    .category{
+      margin: 0;
+      padding: 0;
+    }
+  .treadmill{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 630px;
+      left: 50px;
+  }
+  .treadmill img{
+      width: 100px;
+      height: 100px;
+  }
+  .treadmill h1{
+      font-size: 15px;
+  }
+  .fitness{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 630px;
+      left: 300px;
+  }
+  .fitness img{
+      width: 100px;
+      height: 100px;
+  }
+  .fitness h1{
+      font-size: 15px;
+  }
+  .gym{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 630px;
+      left: 580px;
+  }
+  .gym img{
+      width: 100px;
+      height: 100px;
+  }
+  .gym h1{
+      font-size: 15px;
+  }
+  .play{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 630px;
+      left: 800px;
+  }
+  .play img{
+      width: 100px;
+      height: 100px;
+  }
+  .play h1{
+      font-size: 15px;
+  }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .main{
+      margin: 0;
+      padding: 0;
+    }
+    .main img{
+      width: 450px;
+      height: 200px;
+      position: absolute;
+      top: 250px;
+      left: 550px;
+    }
+    .main-content{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 550px;
+      top: 450px;
+    }
+    .category{
+      margin: 0;
+      padding: 0;
+    }
+  .treadmill{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 630px;
+      left: 50px;
+  }
+  .treadmill img{
+      width: 150px;
+      height: 150px;
+  }
+  .treadmill h1{
+      font-size: 15px;
+  }
+  .fitness{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 630px;
+      left: 400px;
+  }
+  .fitness img{
+      width: 150px;
+      height: 150px;
+  }
+  .fitness h1{
+      font-size: 15px;
+  }
+  .gym{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 630px;
+      left: 850px;
+  }
+  .gym img{
+      width: 150px;
+      height: 150px;
+  }
+  .gym h1{
+      font-size: 15px;
+  }
+  .play{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 630px;
+      left: 1200px;
+  }
+  .play img{
+      width: 150px;
+      height: 150px;
+  }
+  .play h1{
+      font-size: 15px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
